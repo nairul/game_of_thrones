@@ -1,0 +1,10 @@
+<h2>Edit Character</h2>
+
+<%= form_for @character do |f| %>
+  <%= f.label :character_name %>
+  <%= f.text_field :character_name %>
+
+  <%= f.submit %>
+<% end %>
+
+<%= link_to "Delete!", @character, method: :delete, class: "delete" %>

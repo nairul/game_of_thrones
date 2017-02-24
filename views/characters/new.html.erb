@@ -1,0 +1,8 @@
+<h2>New Character for <%= link_to @house.name, @house %></h2>
+
+<%= form_for [@house, @character] do |f| %>
+  <%= f.label :character_name %>
+  <%= f.text_field :character_name %>
+
+  <%= f.submit %>
+<% end %>
